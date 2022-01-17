@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url('background.jpg');
+}
+
+body h1{
+    font-weight: bolder;
+}
+
+body textarea {
+    resize: none;
+    width: 80%;
+    border-radius: 6px;
+    font-size: 24px;
+}
+
+body div {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    color: white;
+    padding-left: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
