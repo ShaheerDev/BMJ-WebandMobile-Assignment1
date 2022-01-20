@@ -26,3 +26,70 @@ body div {
     padding-top: 14px;
     padding-bottom: 14px;
 }
+
+.centerbtn {
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border-radius:3px;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #92b879;
+}
+.centerbtn:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+.centerbtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+.clearbtn {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.clearbtn:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.clearbtn:active {
+	position:relative;
+	top:1px;
+}
+
+#notification {
+    position: absolute;
+    bottom: 10%;
+    width: 20%;
+    border-radius: 6px;
+    font-weight: bold;
+    display: none;
+}
+
+#notificationb {
+    position: absolute;
+    bottom: 10%;
+    width: 20%;
+    border-radius: 6px;
+    font-weight: bold;
+    display: none;
+}
