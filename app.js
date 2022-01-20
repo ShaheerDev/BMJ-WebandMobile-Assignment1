@@ -3,8 +3,10 @@ const getPrevData = () => {
     if (PrevData == null || PrevData == '') { } else {
         document.getElementById('notepadtxt').innerHTML = PrevData;
         var characterLength = document.getElementById('notepadtxt').value.length;
-        document.getElementById('characters').innerHTML = `${characterLength} Characters written.`
-
+        var lines = document.getElementById('notepadtxt').value.split(/\r|\r\n|\n/);
+        document.getElementById('characters').innerHTML = `${characterLength} Characters written, ${lines.length} Lines`
+        document.getElementById('notificationb').style.display = 'inline-block';
+        setTimeout(function(){document.getElementById('notificationb').style.display = 'none';}, 1500)
         var alignData = localStorage.getItem('align');
         if (alignData == '' || alignData == null) { } else {
             if (alignData == 'left') {
@@ -24,13 +26,15 @@ const updateData = () => {
     localStorage.setItem('txt-notepad', document.getElementById('notepadtxt').value);
 
     var characterLength = document.getElementById('notepadtxt').value.length;
-    document.getElementById('characters').innerHTML = `${characterLength} Characters written.`
+    var lines = document.getElementById('notepadtxt').value.split(/\r|\r\n|\n/);
+    document.getElementById('characters').innerHTML = `${characterLength} Characters written, ${lines.length} Lines`
+    document.getElementById('notification').style.display = 'inline-block';
+    setTimeout(function(){document.getElementById('notification').style.display = 'none';}, 1500)
 }
 
 const clearData = () => {
     localStorage.setItem('txt-notepad', '');
     window.location.reload();
-    document.getElementById('characters').innerHTML = `${characterLength} Characters written.`
 }
 
 
